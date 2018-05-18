@@ -1,0 +1,43 @@
+#linux instalation
+
+https://getcomposer.org/download/ --> nesse link contem o comando para instalação pelo terminal
+mv composer .phar /usr/local/bin/composer --> torna o composer acessível globalmente pelo terminal
+
+você deve fechar e abrir chaves dentro do composer.json para ele começar a funcionar e se tornar um json válido.
+
+composer require phpmailer/phpmailer --> instala o php mailer
+
+composer update
+
+composer dump-autoload -o
+
+composer init
+
+
+
+
+{
+    "name": "jefersonchange/curso-composer",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Jeferson Change",
+            "email": "jefersonchange@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.0",
+        "symfony/var-dumper": "^3.4",
+        "php-activerecord/php-activerecord": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app",
+            "asw\\": ["services", "jobs"]
+        },
+        
+        "files": ["functions/helpers.php"]
+    }
+    
+}
+

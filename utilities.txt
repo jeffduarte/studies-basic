@@ -1,0 +1,28 @@
+
+
+
+
+bindParam
+
+- Insert In tabela (campo1, campo2, campo3, campo4) Values (?, ?, ?, ?);
+
+prepare
+
+bindParam(1, $campo1, PDO::PARAM_STR)
+
+- Insert In tabela (campo1, campo2, campo3, campo4) Values (:campo1, :campo2, :campo3 ?);
+bindValue($campo1, $valor1)
+
+
+foreach($_POST as $campo => $valor)
+{
+    $$campo = $valor;
+
+    $nome_do_campo = sanitize($valor);
+}
+
+
+sanitize('campo', 's');
+
+
+$$value == coloca a string dentro da variável como uma nova variável.
