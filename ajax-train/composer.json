@@ -1,0 +1,17 @@
+{
+    "name": "jeferson.barbosa/ajax-train",
+    "description": "tecnicas e estudos sobre ajax",
+    "type": "studies purpose",
+    "license": "Creative Commons",
+    "authors": [
+        {
+            "name": "Jeferson Change",
+            "email": "Jefersonchange@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app"
+        }
+    }
+}
